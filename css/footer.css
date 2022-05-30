@@ -1,0 +1,46 @@
+.Site {
+    font-family: 'PetFont';
+    font-size: 30px;
+}
+
+#grassBackground {
+    width: 100%;
+}
+
+.icons {
+    margin-left: 4%;
+    transition: all .2s;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+}
+
+header {
+    padding-left: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .icons {
+
+        transition: all .2s;
+    }
+
+    .Site {
+
+        font-family: 'PetFont';
+        font-size: 20px;
+    }
+
+    header {
+        padding-left: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 1100px) {
+    #grassBackground {
+        width: 100%;
+    }
+}

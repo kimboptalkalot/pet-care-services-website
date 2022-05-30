@@ -1,0 +1,94 @@
+.container {
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px 0 0 10px;
+}
+
+
+.bar1,
+.bar2,
+.bar3 {
+    display: none;
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#mobileNav {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    margin-left: -10px;
+}
+
+#mobileNav ul {
+    list-style: none;
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+
+}
+
+#mobileNav a {
+    font-family: 'petFont';
+    text-decoration: none;
+    color: black;
+    font-size: 50px;
+    margin-bottom: 20px;
+
+}
+
+#mobileNav a:hover {
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        display: block;
+    }
+
+}
